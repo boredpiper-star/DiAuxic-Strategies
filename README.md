@@ -257,3 +257,8 @@ For questions or support, please contact: boredpiper-star@example.com
 ---
 
 **Built with ❤️ for management consultants**
+
+
+## Deployment
+
+This project is deployed on Vercel for testing and demonstration purposes.
