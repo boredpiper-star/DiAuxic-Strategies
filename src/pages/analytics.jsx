@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { generateKPIReport, analyzeTrends } from '@/lib/kpiFeatures';
+import { generateKPIReport, analyzeTrends } from '../lib/kpiFeatures';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 
