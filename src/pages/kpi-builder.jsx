@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { KPI_TEMPLATES, calculateKPI } from '@/lib/kpiFeatures';
+import { KPI_TEMPLATES, calculateKPI } from ..@/lib/kpiFeatures';
 import Link from 'next/link';
 
 export default function KPIBuilder() {
