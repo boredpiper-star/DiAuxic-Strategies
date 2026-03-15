@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { extractFinancialData } from '@/lib/kpiFeatures';
+import { extractFinancialData } from '../lib/kpiFeatures';
 import Link from 'next/link';
 
 export default function FileUpload() {
