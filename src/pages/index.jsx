@@ -5,17 +5,17 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-slate-50 to-blue-100">
-      {/* Header */}
-      <nav className="bg-white shadow-sm border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-8 py-4">
+    <div className="min-h-screen bg-gray-50">
+      {/* Navigation */}
+      <nav className="bg-white shadow-sm border-b">
+        <div className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-light text-slate-900">DiAuxic Strategies</h1>
+            <h1 className="text-2xl font-semibold text-gray-900">DiAuxic Strategies</h1>
             <div className="flex gap-4">
-              <Link href="/login" className="px-6 py-2 text-slate-600 hover:text-slate-900 font-light transition-colors">
+              <Link href="/login" className="px-5 py-2 text-gray-700 hover:text-gray-900 font-medium transition">
                 Login
               </Link>
-              <Link href="/register" className="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-light transition-colors">
+              <Link href="/register" className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition">
                 Get Started
               </Link>
             </div>
@@ -24,102 +24,85 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-8 py-20">
+      <main className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h2 className="text-6xl font-light text-slate-900 mb-6">
-            KPI Management Platform
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">
+            KPI Management for SMEs
           </h2>
-          <p className="text-xl text-slate-600 font-light max-w-3xl mx-auto mb-8">
-            Industry-specific KPI tracking for small and medium IT businesses.
-            Upload financial reports, create custom KPIs, and get actionable insights.
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            Streamline your business performance with industry-specific KPIs. Upload financial reports and get instant insights tailored to your business.
           </p>
           <div className="flex gap-4 justify-center">
-            <Link href="/register" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white text-lg rounded-lg font-light transition-colors">
+            <Link href="/register" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium text-lg transition">
               Start Free Trial
             </Link>
-            <Link href="#features" className="px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 text-lg rounded-lg border border-slate-200 font-light transition-colors">
-              Learn More
+            <Link href="/login" className="px-8 py-3 bg-white border-2 border-gray-300 hover:border-gray-400 text-gray-700 rounded-lg font-medium text-lg transition">
+              Sign In
             </Link>
           </div>
         </div>
 
-        {/* Features Grid */}
-        <div id="features" className="grid grid-cols-3 gap-8 mt-20">
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">📊</div>
-            <h3 className="text-xl font-light text-slate-900 mb-3">Built-in KPI Templates</h3>
-            <p className="text-slate-600 font-light">
-              Pre-configured KPIs for IT and SaaS businesses. Get started quickly with industry best practices.
+        {/* Features */}
+        <div className="grid md:grid-cols-3 gap-8 mt-20">
+          <div className="bg-white p-8 rounded-xl shadow-sm border hover:shadow-md transition">
+            <div className="text-3xl mb-4">📊</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Industry KPIs</h3>
+            <p className="text-gray-600">
+              Pre-built KPI templates for IT, Manufacturing, Retail, and more industries.
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">📤</div>
-            <h3 className="text-xl font-light text-slate-900 mb-3">Financial Data Upload</h3>
-            <p className="text-slate-600 font-light">
-              Upload PDF, Excel, or CSV financial reports. Our system automatically extracts key metrics.
+          <div className="bg-white p-8 rounded-xl shadow-sm border hover:shadow-md transition">
+            <div className="text-3xl mb-4">📁</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Smart Upload</h3>
+            <p className="text-gray-600">
+              Upload financial and operational reports. Our system extracts KPIs automatically.
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">✨</div>
-            <h3 className="text-xl font-light text-slate-900 mb-3">Custom KPI Builder</h3>
-            <p className="text-slate-600 font-light">
-              Create ad-hoc KPIs with custom formulas tailored to your specific business needs.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">📈</div>
-            <h3 className="text-xl font-light text-slate-900 mb-3">Analytics & Reports</h3>
-            <p className="text-slate-600 font-light">
-              Generate detailed KPI reports with trend analysis and performance insights.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">👥</div>
-            <h3 className="text-xl font-light text-slate-900 mb-3">Role-Based Access</h3>
-            <p className="text-slate-600 font-light">
-              Separate dashboards for customers, consultants, and admins with granular permissions.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-            <div className="text-4xl mb-4">🎯</div>
-            <h3 className="text-xl font-light text-slate-900 mb-3">Industry Benchmarks</h3>
-            <p className="text-slate-600 font-light">
-              Compare your KPIs against industry standards and identify areas for improvement.
+          <div className="bg-white p-8 rounded-xl shadow-sm border hover:shadow-md transition">
+            <div className="text-3xl mb-4">📈</div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Custom Dashboards</h3>
+            <p className="text-gray-600">
+              Role-based dashboards for admins, consultants, and customers with real-time analytics.
             </p>
           </div>
         </div>
 
-        {/* Quick Access */}
-        <div className="mt-20 bg-white rounded-xl p-10 shadow-sm border border-slate-200">
-          <h3 className="text-2xl font-light text-slate-900 mb-6 text-center">Quick Access</h3>
-          <div className="grid grid-cols-4 gap-4">
-            <Link href="/kpi-builder" className="p-6 bg-blue-50 hover:bg-blue-100 rounded-lg border border-blue-200 text-center transition-colors">
-              <p className="text-blue-700 font-light">KPI Builder</p>
-            </Link>
-            <Link href="/file-upload" className="p-6 bg-green-50 hover:bg-green-100 rounded-lg border border-green-200 text-center transition-colors">
-              <p className="text-green-700 font-light">Upload Reports</p>
-            </Link>
-            <Link href="/analytics" className="p-6 bg-purple-50 hover:bg-purple-100 rounded-lg border border-purple-200 text-center transition-colors">
-              <p className="text-purple-700 font-light">Analytics</p>
-            </Link>
-            <Link href="/dashboard" className="p-6 bg-slate-50 hover:bg-slate-100 rounded-lg border border-slate-200 text-center transition-colors">
-              <p className="text-slate-700 font-light">Dashboard</p>
-            </Link>
+        {/* Test Credentials */}
+        <div className="mt-20 bg-blue-50 border border-blue-200 rounded-xl p-8">
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Test the Platform</h3>
+          <p className="text-gray-700 mb-4">Use these credentials to explore different roles:</p>
+          <div className="grid md:grid-cols-3 gap-6 text-sm">
+            <div className="bg-white p-4 rounded-lg border">
+              <div className="font-semibold text-gray-900 mb-2">👑 Admin</div>
+              <div className="text-gray-600">
+                <div>Email: <code className="bg-gray-100 px-2 py-1 rounded">admin@example.com</code></div>
+                <div>Password: <code className="bg-gray-100 px-2 py-1 rounded">admin123</code></div>
+              </div>
+            </div>
+            <div className="bg-white p-4 rounded-lg border">
+              <div className="font-semibold text-gray-900 mb-2">💼 Consultant</div>
+              <div className="text-gray-600">
+                <div>Email: <code className="bg-gray-100 px-2 py-1 rounded">consultant@example.com</code></div>
+                <div>Password: <code className="bg-gray-100 px-2 py-1 rounded">consultant123</code></div>
+              </div>
+            </div>
+            <div className="bg-white p-4 rounded-lg border">
+              <div className="font-semibold text-gray-900 mb-2">👤 Customer</div>
+              <div className="text-gray-600">
+                <div>Email: <code className="bg-gray-100 px-2 py-1 rounded">customer@example.com</code></div>
+                <div>Password: <code className="bg-gray-100 px-2 py-1 rounded">customer123</code></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-20">
-        <div className="max-w-7xl mx-auto px-8 py-8 text-center">
-          <p className="text-slate-600 font-light">
-            © 2026 DiAuxic Strategies. Built for management consultants.
-          </p>
+      <footer className="bg-white border-t mt-20">
+        <div className="max-w-6xl mx-auto px-6 py-8 text-center text-gray-600">
+          <p>© 2026 DiAuxic Strategies. Management Consultancy Platform.</p>
         </div>
       </footer>
     </div>
